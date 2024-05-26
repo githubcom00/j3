@@ -1,0 +1,62 @@
+
+class Parent {
+    void displayParent() {
+        System.out.println("This is the parent class");
+    }
+}
+
+
+class Child extends Parent {
+    void displayChild() {
+        System.out.println("This is the child class");
+    }
+}
+
+public class inher {
+    public static void main(String[] args) {
+       
+        Child o1 = new Child();
+        o1.displayParent();
+        o1.displayChild();
+    }
+}
+
+
+
+3b
+
+
+
+interface Shape{
+void area();
+} 
+class Rectangle implements Shape{
+double l,b;
+Rectangle(double length, double breadth){
+l=length;
+b=breadth;
+}
+public void area(){
+System.out.println("Area of Rectangle is : " + l*b);
+}
+}
+
+class Triangle implements Shape{
+double b,h;
+Triangle (double base, double height){
+b= base;
+h= height;
+}
+
+public void area(){
+System.out.println("Area of Triangle is : " + (b*h/2));
+}
+}
+public class InterfaceDemo {
+ public static void main(String args[]){
+ Rectangle rect=new Rectangle(10,05);
+ rect.area();
+ Triangle tri=new Triangle(10,20);
+ tri.area();
+ }
+} 
